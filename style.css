@@ -474,50 +474,16 @@ li:hover {
     left: 50%;
     transform: translateX(-50%);
     height: 400px;
-    width: 70%;
-    background-color: rgb(17, 17, 17);
+    width: 900px;
+    background-image: url(Img/promotion.jpg);
 }
 
-.hgroup_prom {
-    color: white;
-    position: absolute;
-    font-family: 'Pattaya', sans-serif;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.promotion>h2 {
+.promotion>i {
     top: 20px;
-    font-size: 3rem;
+    right: 20px;
+    color: white;
 }
 
-.promotion>h3 {
-    font-size: 2rem;
-    top: 70px;
-}
-
-.promotion>h4 {
-    font-size: 3.5rem;
-    top: 80%;
-}
-
-.pizza_in_promotion {
-    position: absolute;
-    left: 35%;
-    top: 120px;
-}
-
-.cocacola_in_promotion {
-    position: absolute;
-    right: 35%;
-    top: 150px;
-}
-
-.cocacola_in_promotion2 {
-    position: absolute;
-    right: 30%;
-    top: 150px;
-}
 
 /* Keyframes */
 
