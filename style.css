@@ -1,0 +1,520 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+article,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+	display: block;
+}
+
+body {
+	background-image: url(img/wood.jpg);
+}
+
+header {
+    position: relative;
+	width: 100%;
+	height: 100px;
+	background-image: url(img/header_background.jpg);
+}
+
+footer{
+    width: 100%;
+	height: 100px;
+    background-color: black;
+}
+
+label {
+    display:block;
+    position: relative;
+    left: 20%;
+    font-size: 15px;
+}
+
+input{
+    position: relative;
+    left: 20%;
+}
+
+.hamburger {
+	width: 40px;
+	height: 5px;
+	background-color: #000000;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	transition: .5s;
+	z-index: 3;
+    cursor: pointer;
+}
+
+.hamburger:before,
+.hamburger:after {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 5px;
+	background-color: #000000;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	transition: .5s;
+}
+
+.hamburger:before {
+	top: -12px;
+}
+
+.hamburger:after {
+	top: 12px;
+}
+
+nav.active .hamburger {
+	background: rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+nav.active .hamburger:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+nav.active .hamburger:after {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+main {
+    position: relative;
+	width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+	max-width: 1300px;
+    margin: 100px auto 0 auto;
+}
+
+.logo {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	background-image: url(img/pizza.png);
+	background-size: cover;
+	top: 40px;
+    right: calc(50% - 60px);
+	z-index: 3;
+	margin: 0 auto;
+	transition: 2s;
+	animation-name: rot;
+	animation-duration: 2s;
+}
+
+.logo:hover {
+	transform: rotateZ(360deg);
+}
+
+.hide {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.7);
+	top: 0px;
+	z-index: 1;
+}
+
+.menu_mobile {
+	position: absolute;
+	top: 0px;
+	width: 50%;
+	height: 100vh;
+	background-color: #d0477f;
+	z-index: 2;
+}
+
+.pizza {
+	position: relative;
+	background-color: white;
+    flex-grow:1;
+    min-width: 280px;
+	max-width: 280px;
+	margin: auto auto 20px auto;
+	height: 250px;
+	border-radius: 5px;
+	animation-name: anim_pizza;
+	animation-duration: 1.5s;
+}
+
+.shop_icon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-image: url(Img/shop.png);
+    background-size: cover;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.amount{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 110px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #721a2e;
+    
+}
+
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}
+
+.shop, .shop2, .shop3{
+    background-color: white;
+    min-height: 60vh;
+    width: 90%;
+    left: -50%;
+    top: 160px;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 2;
+    border-radius: 5px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.shop2{
+    z-index: 3;
+}
+
+.shop3{
+    z-index: 4;
+}
+
+.order, .next{
+    background: #b4b4b4;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    width: 70px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.zamow_price{
+    position: absolute;
+    right: 130px;
+    bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.final_price{
+    position: absolute;
+    right: 90px;
+    bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.fa-times-circle{
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.fa-arrow-alt-circle-left{
+    font-size: 25px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.added_pizza{
+    background: #e2e2e2;
+    position: relative;
+    display: block;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.delete_pizza{
+    position: absolute;
+    top:50%;
+    right: 4%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.add_price{
+    position: absolute;
+    right: 15%;
+}
+
+.picture{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+}
+
+
+/* Cards Pizzas */
+
+h1 {
+    padding-top: 5px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Pattaya', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h3 {
+    text-align: center;
+    position: relative;
+    font-size: 1.8rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h4{
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h5{
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    
+}
+
+h6.orders {
+    text-align: center;
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+p {
+    text-align: center;
+    position: relative;
+    top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.pizza_photo{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.photo {
+    float: left;
+    width: 50%;
+    height: 170px;
+}
+
+.description {
+    float: right;
+    width: 50%;
+    height: 170px;
+}
+
+.size{
+    position: absolute;
+    width: 130px;
+    top: 170px;
+    right: 10px;
+    height: 30px;
+}
+
+.bottom_size{
+    height: 30px;
+    width: 30px; 
+    box-shadow: -1px 1px 10px 2px #cecece;
+    border: 2px solid #cecece;
+    border-radius: 10px 10px 10px 10px;
+    transition: 1s;
+}
+
+.size_pizza{
+    background: #d4d4d4;
+    position: relative;  
+    height: 30px;
+    margin: 0 34px;
+    border-radius: 10px 10px 10px 10px;   
+}
+
+.minus{
+    float: left;
+    cursor: pointer;
+}
+
+.plus{
+    float: right;
+    cursor: pointer;
+}
+
+.clear{
+    clear:both;
+}
+
+.buy {
+    background: #dbdbdb;
+    clear: both;
+    position: absolute;
+    right: 30px;
+    top: 84%;
+    height: 30px;
+    width: 30%; 
+    box-shadow: -1px 1px 10px 2px #bcbcbc;
+    border: 2px solid #bcbcbc;
+    border-radius: 10px 10px 10px 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.h2_price {
+    position: absolute;
+    top: 84%;
+    left: 20px;
+    height: 30px;
+    width: 40px;
+}
+
+.box_price {
+    position: absolute;
+    top: 84%;
+    left: 60px;
+    height: 30px;
+    width: 40px;
+}
+
+.buy:hover, .bottom_size:hover {
+    border-color: #000000;
+    box-shadow: -1px 1px 10px 2px #000;
+}
+
+/* Menu */
+ul{
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+}
+
+li{
+    position: relative;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    top: 50%;
+    padding: 20px 0; 
+    transform: translateY(-150%);
+    font-size: 2.5rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+li:hover{
+   color: black; 
+}
+
+/* Keyframes */
+
+@keyframes rot {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes anim_pizza {
+	from {
+		opacity: 0;
+		left: -100%;
+	}
+	to {
+		opacity: 1;
+		left: 0%;
+	}
+}
+
+/*Media Screen*/
+
+@media screen and (max-width: 400px) {
+    .shop_icon{
+        right: 5%;
+    }
+    .amount{
+        right: 20%
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .pizza{
+        min-width: 400px
+    }
+    .size{
+        right: 26px
+    }
+    .pizza_photo{
+        left: 30px;
+    }
+    .box_price{
+        left: 90px;
+    }
+    .h2_price{
+        left: 50px;
+    }
+    .shop, .shop2, .shop3{  
+    width: 400px;   
+    }
+    .menu_mobile{
+        width: 20%;
+    }
+}

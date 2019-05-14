@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> 
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="hamburger"></div>
+		</nav>
+		<div class="shop_icon"></div>
+			<div class="amount">
+			    <h5 id="number_orders">0</h5>
+			</div>
+	</header>
+	<div class="logo"></div>
+	<div class="menu_mobile">
+	    <ul>
+	        <li>Promocje</li>
+            <li>Nowości</li>
+            <li>O Nas</li>
+	    </ul>
+	</div>
+	<div class="hide"></div>
+	<main>
+	    <div class="container">
+		<div class="pizza">
+		    <h1 class="0">Pizza Classic</h1>
+            <div class="photo">
+		        <img class="0 pizza_photo" src="img/Pizza1.png" alt="Classic Pizza" height="140">
+		    </div>
+		    <div class="description">
+		        <article>
+		            <p> Ser </p>
+		            <p>Szynka </p>
+		            <p>Pieczarki</p>
+		        </article>
+		       <div class="size">
+		           <div class="0 minus bottom_size">
+		           <h4>-</h4>
+		           </div>
+		           <div class="0 plus bottom_size">
+		           <h4>+</h4>  
+		           </div>
+		           <div class="size_pizza">
+		           <h3 id="js_size0">Small</h3>
+		           </div>
+		       </div> 
+		    </div>
+		    <div class="h2_price">
+		        <h2>Cena</h2>
+		    </div>
+		    <div class="box_price">
+		        <h2 id="price0">16.00</h2>
+		    </div>
+		    <div class="0 buy">
+		        <h2>Kup</h2>
+		    </div>
+		</div>
+		<div class="pizza object">
+		    <h1 class="1">Pizza Meksykańska</h1>
+            <div class="photo">
+		        <img class="1 pizza_photo" src="img/Pizza1.png" alt="Classic Pizza" height="140">
+		    </div>
+		    <div class="description">
+		        <article>
+		            <p>Salami</p>
+		            <p>Kiełbasa</p>
+		            <p>Peperoni</p>
+		            <p>Czosnek</p>
+		        </article>
+		       <div class="size">
+		           <div class="1 minus bottom_size">
+		           <h4>-</h4>
+		           </div>
+		           <div class="1 plus bottom_size">
+		           <h4>+</h4>  
+		           </div>
+		           <div class="size_pizza">
+		           <h3 id="js_size1">Small</h3>
+		           </div>
+		       </div> 
+		    </div>
+		    <div class="h2_price">
+		        <h2>Cena</h2>
+		    </div>
+		    <div class="box_price">
+		        <h2 id="price1">20.00</h2>
+		    </div>
+		    <div class="1 buy">
+		        <h2>Kup</h2>
+		    </div>
+		</div>
+		<div class="pizza object">
+		    <h1 class="2">Pizza Bologness</h1>
+            <div class="photo">
+		        <img class="2 pizza_photo" src="img/Pizza1.png" alt="Classic Pizza" height="140">
+		    </div>
+		    <div class="description">
+		        <article>
+		            <p>Cebula</p>
+		            <p>Peperoni</p>
+		            <p>Czosnek</p>
+		            <p>Sos Bolognes</p>
+		        </article>
+		       <div class="size">
+		           <div class="2 minus bottom_size">
+		           <h4>-</h4>
+		           </div>
+		           <div class="2 plus bottom_size">
+		           <h4>+</h4>  
+		           </div>
+		           <div class="size_pizza">
+		           <h3 id="js_size2">Small</h3>
+		           </div>
+		       </div> 
+		    </div>
+		    <div class="h2_price">
+		        <h2>Cena</h2>
+		    </div>
+		    <div class="box_price">
+		        <h2 id="price2">21.00</h2>
+		    </div>
+		    <div class="2 buy">
+		        <h2>Kup</h2>
+		    </div>
+		</div>
+		<div class="pizza object">
+		    <h1 class="3">Pizza Szefa</h1>
+            <div class="photo">
+		        <img class="3 pizza_photo" src="img/Pizza1.png" alt="Classic Pizza" height="140">
+		    </div>
+		    <div class="description">
+		        <article>
+		            <p>Salami</p>
+		            <p>Tuńczyk</p>
+		            <p>Cebula</p>
+		            <p>Czosnek</p>
+		        </article>
+		       <div class="size">
+		           <div class="3 minus bottom_size">
+		           <h4>-</h4>
+		           </div>
+		           <div class="3 plus bottom_size">
+		           <h4>+</h4>  
+		           </div>
+		           <div class="size_pizza">
+		           <h3 id="js_size3">Small</h3>
+		           </div>
+		       </div> 
+		    </div>
+		    <div class="h2_price">
+		        <h2>Cena</h2>
+		    </div>
+		    <div class="box_price">
+		        <h2 id="price3">25.00</h2>
+		    </div>
+		    <div class="3 buy">
+		        <h2>Kup</h2>
+		    </div>
+		</div>
+		<div class="pizza object">
+		    <h1 class="4">Pizza Blanca</h1>
+            <div class="photo">
+		        <img class="4 pizza_photo" src="img/Pizza1.png" alt="Classic Pizza" height="140">
+		    </div>
+		    <div class="description">
+		        <article>
+		            <p>Salami</p>
+		            <p>Szynka</p>
+		            <p>Cebula</p>
+		            <p>Śmietana</p>
+		        </article>
+		       <div class="size">
+		           <div class="4 minus bottom_size">
+		           <h4>-</h4>
+		           </div>
+		           <div class="4 plus bottom_size">
+		           <h4>+</h4>  
+		           </div>
+		           <div class="size_pizza">
+		           <h3 id="js_size4">Small</h3>
+		           </div>
+		       </div> 
+		    </div>
+		    <div class="h2_price">
+		        <h2>Cena</h2>
+		    </div>
+		    <div class="box_price">
+		        <h2 id="price4">24.00</h2>
+		    </div>
+		    <div class="4 buy">
+		        <h2>Kup</h2>
+		    </div>
+		</div>
+		<div class="pizza object">
+		    <h1 class="5">Pizza Katalońska</h1>
+            <div class="photo">
+		        <img class="5 pizza_photo" src="img/Pizza1.png" alt="Classic Pizza" height="140">
+		    </div>
+		    <div class="description">
+		        <article>
+		            <p>Papryka</p>
+		            <p>Pieczarki</p>
+		            <p>Kiełbasa</p>
+		            <p>Oliwki</p>
+		        </article>
+		       <div class="size">
+		           <div class="5 minus bottom_size">
+		           <h4>-</h4>
+		           </div>
+		           <div class="5 plus bottom_size">
+		           <h4>+</h4>  
+		           </div>
+		           <div class="size_pizza">
+		           <h3 id="js_size5">Small</h3>
+		           </div>
+		       </div> 
+		    </div>
+		    <div class="h2_price">
+		        <h2>Cena</h2>
+		    </div>
+		    <div class="box_price">
+		        <h2 id="price5">23.00</h2>
+		    </div>
+		    <div class="5 buy">
+		        <h2>Kup</h2>
+		    </div>
+		</div>
+		<div class="pizza object">
+		    <h1 class="6">Pizza Special</h1>
+            <div class="photo">
+		        <img class="6 pizza_photo" src="img/Pizza1.png" alt="Classic Pizza" height="140">
+		    </div>
+		    <div class="description">
+		        <article>
+		            <p>Kurczak</p>
+		            <p>Fasola</p>
+		            <p>Kukurydza</p>
+		            <p>Peperoni</p>
+		        </article>
+		       <div class="size">
+		           <div class="6 minus bottom_size">
+		           <h4>-</h4>
+		           </div>
+		           <div class="6 plus bottom_size">
+		           <h4>+</h4>  
+		           </div>
+		           <div class="size_pizza">
+		           <h3 id="js_size6">Small</h3>
+		           </div>
+		       </div> 
+		    </div>
+		    <div class="h2_price">
+		        <h2>Cena</h2>
+		    </div>
+		    <div class="box_price">
+		        <h2 id="price6">22.00</h2>
+		    </div>
+		    <div class="6 buy">
+		        <h2>Kup</h2>
+		    </div>
+		</div>
+		<div class="pizza object">
+		    <h1 class="7">Pizza Kebab</h1>
+            <div class="photo">
+		        <img class="7 pizza_photo" src="img/Pizza1.png" alt="Classic Pizza" height="140">
+		    </div>
+		    <div class="description">
+		        <article>
+		            <p>Papryka</p>
+		            <p>Pieczarki</p>
+		            <p>Kiełbasa</p>
+		            <p>Oliwki</p>
+		        </article>
+		       <div class="size">
+		           <div class="7 minus bottom_size">
+		           <h4>-</h4>
+		           </div>
+		           <div class="7 plus bottom_size">
+		           <h4>+</h4>  
+		           </div>
+		           <div class="size_pizza">
+		           <h3 id="js_size7">Small</h3>
+		           </div>
+		       </div> 
+		    </div>
+		    <div class="h2_price">
+		        <h2>Cena</h2>
+		    </div>
+		    <div class="box_price">
+		        <h2 id="price7">24.50</h2>
+		    </div>
+		    <div class="7 buy">
+		        <h2>Kup</h2>
+		    </div>
+		</div>
+		<div class="pizza object">
+		    <h1 class="78">Pizza Kebab</h1>
+            <div class="photo">
+		        <img class="8 pizza_photo" src="img/Pizza1.png" alt="Classic Pizza" height="140">
+		    </div>
+		    <div class="description">
+		        <article>
+		            <p>Papryka</p>
+		            <p>Pieczarki</p>
+		            <p>Kiełbasa</p>
+		            <p>Oliwki</p>
+		        </article>
+		       <div class="size">
+		           <div class="8 minus bottom_size">
+		           <h4>-</h4>
+		           </div>
+		           <div class="8 plus bottom_size">
+		           <h4>+</h4>  
+		           </div>
+		           <div class="size_pizza">
+		           <h3 id="js_size8">Small</h3>
+		           </div>
+		       </div> 
+		    </div>
+		    <div class="h2_price">
+		        <h2>Cena</h2>
+		    </div>
+		    <div class="box_price">
+		        <h2 id="price8">24.50</h2>
+		    </div>
+		    <div class="8 buy">
+		        <h2>Kup</h2>
+		    </div>
+		</div>
+		</div>
+		<div class="shop">
+            <i class="far fa-times-circle"></i>
+		    <h6 class="orders">Zamówienie (1/3)</h6>
+		    <div class="next"><h3>Dalej</h3></div>
+		    <h6 class="zamow_price">Koszt</h6>
+		    <h6 class="final_price">0</h6>
+		</div>
+        <div class="shop2">
+            <i class="far fa-arrow-alt-circle-left"></i>
+            <i class="far fa-times-circle"></i>
+            <h6 class="orders">Zamówienie (2/3)</h6>
+            <div class="order"><h3>Zamów</h3></div>
+            <h6 class="zamow_price">Koszt</h6>
+		    <h6 class="final_price">0</h6>
+           <form id="formularz">
+            <label for="Imie">Imie:</label>
+            <input type="text" id="imie">
+            <label for="Nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko">
+            <label for="Miejscowosc">Miejscowość:</label>
+            <input type="text" id="miejscowosc">
+            <label for="Kod">Kod pocztowy:</label>
+            <input type="text" id="kod">
+            <label for="Ulica">Ulica:</label>
+            <input type="text" id="ulica">
+            <label for="Lokal">Numer lokalu:</label>
+            <input type="text" id="lokal">
+            <label for="Mieszkanie">Numer Mieszkania:</label>
+            <input type="text" id="mieszkanie">
+            <label for="Telefon">Numer telefonu:</label>
+            <input type="number" id="telefon">
+            </form>
+        </div>
+        <div class="shop3">
+            <i class="far fa-times-circle"></i>
+            <h6 class="orders">Zamówienie (3/3)</h6>
+            <p class="end_order">Zamówienie zostało wysłane</p>
+        </div>
+	</main>
+	<footer></footer>
+	<script src="javascript.js"></script>
+</body>
+
+</html>
