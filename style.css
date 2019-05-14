@@ -44,7 +44,13 @@ label {
 
 input {
     position: relative;
-    left: 20%;
+    height: 30px;
+    width: 70%;
+    box-shadow: -1px 1px 10px 2px #cecece;
+    border: 2px solid #cecece;
+    border-radius: 10px 10px 10px 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hamburger {
