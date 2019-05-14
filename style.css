@@ -466,6 +466,8 @@ li:hover {
     color: black;
 }
 
+/* Promotion card */
+
 .promotion {
     position: absolute;
     top: 0;
@@ -479,15 +481,25 @@ li:hover {
 .hgroup_prom {
     color: white;
     position: absolute;
-}
-
-.promotion h2 {
-    top: 20px;
+    font-family: 'Pattaya', sans-serif;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.promotion>h2 {
+    top: 20px;
     font-size: 3rem;
 }
 
+.promotion>h3 {
+    font-size: 2rem;
+    top: 70px;
+}
+
+.promotion>h4 {
+    font-size: 3.5rem;
+    top: 80%;
+}
 
 
 /* Keyframes */
