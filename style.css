@@ -448,6 +448,7 @@ ul {
     text-decoration: none;
     text-align: center;
     height: 100%;
+    list-style-type: none;
 }
 
 li {
@@ -474,8 +475,15 @@ li:hover {
     left: 50%;
     transform: translateX(-50%);
     height: 400px;
-    width: 900px;
+    width: 800px;
     background-image: url(Img/promotion.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 4;
+}
+
+.promotion.active {
+    left: -50%;
 }
 
 .promotion>i {
@@ -518,6 +526,11 @@ li:hover {
 
     .amount {
         right: 20%
+    }
+
+    .promotion {
+        width: 95%;
+        height: 250px;
     }
 }
 
