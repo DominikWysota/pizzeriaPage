@@ -482,7 +482,7 @@ li:hover {
     transform: translateX(-50%);
     height: 400px;
     width: 800px;
-    background-image: url(Img/promotion.jpg);
+    background-image: url(img/promotion.jpg);
     background-size: cover;
     background-position: center;
     z-index: 4;
