@@ -172,7 +172,6 @@ main {
     top: 50%;
     transform: translateY(-50%);
     right: 60px;
-    transition: .1s;
     cursor: pointer;
 }
 
