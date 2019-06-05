@@ -29,7 +29,6 @@ $(document).ready(function () {
         $('.hide').animate({
             visibility: 'toggle'
         });
-        $('body').toggleClass('stop-scrolling')
     });
     $('.next').click(function () {
         if (number_orders > 0) {
